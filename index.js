@@ -39,6 +39,7 @@ app.delete('/alunos/:id', (req, res) => {
 //Executando o servidor 
 const porta = 8080;
 // porta é a const 8080 está lá em cima  http://localhost:8080/
+//Precisa ligar o servidor no CMD coloque npx nodemon
 app.listen(porta, () => {
     console.log(`Servidor NodeJS rodando na porta ${porta}`);
 });
