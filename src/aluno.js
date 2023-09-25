@@ -38,4 +38,24 @@ function inserir(aluno, res){
     })
 }
 
-export { ler,  inserir};
+
+//Ler Um Aluno no banco de dados
+//Usa o id no lerUm(id, res), poís só queremos um aluno.
+function lerUm(id, res){
+    const sql = "SELECT * FROM alunos WHERE id = ?";
+    conexao.query(sql, id, (erro, resultados) =>{
+        if(resultados === 0){
+            res.status(204).end();
+            return;
+        }
+
+        if(erro){
+            res.status(400).json(erro.code);            
+        } else {
+            res.status(200).json(resultados);
+        }
+    });
+}
+
+
+export { ler,  inserir, lerUm};

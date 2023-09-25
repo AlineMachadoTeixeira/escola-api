@@ -1,5 +1,5 @@
 import express from 'express';
-import { ler, inserir } from './src/aluno.js'
+import { ler, inserir, lerUm } from './src/aluno.js'
 
 //armazenando o express em uma variável. Ao inves de chamar express().get, usaremos app.get;
 const app = express();
@@ -27,7 +27,9 @@ app.get('/alunos', (req, res) => {
 
 //Exibindo Dados de Um aluno 
 app.get('/alunos/:id', (req, res) => {
-    res.send (`Exibindo dados de UM aluno`)
+    // res.send (`Exibindo dados de UM aluno`)
+    const id = parseInt(req.params.id);
+    lerUm(id, res);
 });
 
 //Inserindo NOVO aluno com POST 
