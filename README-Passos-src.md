@@ -29,12 +29,12 @@ Fazer todos os passos a passos da pagina aluno.js e incluir no index.js terminou
 
 Crie uma conta no site  https://www.db4free.net/index.php?language=pt
 
-- HOST:db4free.net
+
 - Confirmar o email. Vai aparecer os dados que você colocou
-- Banco de dados: apiescolaaline
-- Nome de usuário: senacaline
+- HOST:db4free.net
 - Email: doyinod625@fandsend.com
 - Nome do banco de dados MySQL: apiescolaaline
+- Nome de usuário: senacaline
 - Senha do MySQL:  senac123
 
 Entrar no PHP ADM https://www.db4free.net/signup.php
