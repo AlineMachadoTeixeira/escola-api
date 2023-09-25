@@ -1,5 +1,5 @@
 import express from 'express';
-import { ler, inserir, lerUm } from './src/aluno.js'
+import { ler, inserir, lerUm, atualizar } from './src/aluno.js'
 
 //armazenando o express em uma variável. Ao inves de chamar express().get, usaremos app.get;
 const app = express();
@@ -43,7 +43,10 @@ app.post('/alunos', (req, res) => {
 
 //Atualizando Dados de um aluno  com patch
 app.patch('/alunos/:id', (req, res) => {
-    res.send (`Atualizando dados de Um aluno `)
+    // res.send (`Atualizando dados de Um aluno `)
+    const id = parseInt(req.params.id);
+    const aluno = req.body;
+    atualizar(id, aluno, res);
 });
 
 
