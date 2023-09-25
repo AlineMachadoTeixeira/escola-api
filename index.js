@@ -1,9 +1,10 @@
 import express from 'express';
-import { ler, inserir, lerUm, atualizar } from './src/aluno.js'
+import { ler, inserir, lerUm, atualizar, excluir } from './src/aluno.js'
 
 //armazenando o express em uma variável. Ao inves de chamar express().get, usaremos app.get;
 const app = express();
-const porta = 8080;
+//const porta = 8080; era essa quando estavamos usando o xampp
+const porta = process.env.PORT || 3306; // porta banco de dados do:  db4free.net
 
 //adicionando suporte 
 app.use(express.json())
@@ -52,7 +53,9 @@ app.patch('/alunos/:id', (req, res) => {
 
 //Excluindo Aluno com delete
 app.delete('/alunos/:id', (req, res) => {
-    res.send (`Excluindo alunos `)
+    // res.send (`Excluindo alunos `)
+    const id = parseInt(req.params.id);
+    excluir(id, res);
 });
 
 //Executando o servidor 

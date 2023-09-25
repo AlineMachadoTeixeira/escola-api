@@ -20,4 +20,21 @@ app.use(express.urlencoded ({ extended : true}))
 
 - Depois criamos o CRUD //INSERIR alunos no banco de dados
 no index import { ler, inserir } from './src/aluno.js' Junto com o ler e depois na parte //Inserindo NOVO aluno com POST faz as modificação 
+Fazer todos os passos a passos da pagina aluno.js e incluir no index.js terminou faz o debaixo
 
+
+
+
+### Depois que terminar a página aluno.js de colocar todas as function  inserir ler lerUm atualizar excluir.
+
+Crie uma conta no site  https://www.db4free.net/index.php?language=pt
+
+- HOST:db4free.net
+- Confirmar o email. Vai aparecer os dados que você colocou
+- Banco de dados: apiescolaaline
+- Nome de usuário: senacaline
+- Email: doyinod625@fandsend.com
+- Nome do banco de dados MySQL: apiescolaaline
+- Senha do MySQL:  senac123
+
+Entrar no PHP ADM https://www.db4free.net/signup.php

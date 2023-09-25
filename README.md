@@ -22,3 +22,6 @@ API utilizando NodeJs + Express
 #### Prenchendo o arquivo index.js (OBS: No PACKAGE.JSON na parte do  "main": "index.js" está com nome que precisamos usar na pasta ,)
 
 #### No CMD colocamos npx nodemon  entre  (para ver se está rodando no site http://localhost:8080/ assim que fizemos a Executando o servidor )
+
+
+
