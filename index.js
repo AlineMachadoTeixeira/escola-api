@@ -1,5 +1,6 @@
 import express from 'express';
-import { ler, inserir, lerUm, atualizar, excluir } from './src/aluno.js'
+import { ler, inserir, lerUm, atualizar, excluir } from './src/aluno.js';
+import cors from 'cors';
 
 //armazenando o express em uma variável. Ao inves de chamar express().get, usaremos app.get;
 const app = express();
@@ -68,4 +69,5 @@ app.listen(porta, () => {
 });
 
 
-
+//Permitindo acesso aos arquivos de API
+app.use(cors());
