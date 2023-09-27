@@ -38,3 +38,16 @@ Crie uma conta no site  https://www.db4free.net/index.php?language=pt
 - Senha do MySQL:  senac123
 
 Entrar no PHP ADM https://www.db4free.net/signup.php
+
+##### Usar o render 
+https://dashboard.render.com/ ou  https://dashboard.render.com/
+
+nome: escolaaline
+Build Command: npm install
+Start Command: npm start
+
+no packge.json escreve   "start": "node index.js",
+"scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"    
+  },

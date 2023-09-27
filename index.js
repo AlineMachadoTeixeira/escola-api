@@ -4,7 +4,7 @@ import { ler, inserir, lerUm, atualizar, excluir } from './src/aluno.js'
 //armazenando o express em uma variável. Ao inves de chamar express().get, usaremos app.get;
 const app = express();
 //const porta = 8080; era essa quando estavamos usando o xampp
-const porta = process.env.PORT || 3306; // porta banco de dados do:  db4free.net
+const porta = process.env.PORT || 3306; // porta banco de dados do:  db4free.net  Permitindo que o servidor aponte a melhor porta, usamos a porta 3306
 
 //adicionando suporte 
 app.use(express.json())
